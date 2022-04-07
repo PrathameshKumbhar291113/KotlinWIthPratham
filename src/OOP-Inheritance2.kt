@@ -2,9 +2,9 @@
 
 fun main(args : Array<String>) {
 
-    var humanObj = Human()
-    humanObj.nameOfHuman = "Human"
-    humanObj.name()
+//    var humanObj = Human()
+//    humanObj.nameOfHuman = "Human"
+//    humanObj.name()
 
     var ownerObj = Owner()
     ownerObj.nameOfOwner = "Prathamesh"
@@ -35,7 +35,7 @@ class Owner : Human(){
 
     override fun name() {
         super.name()
-        println("The name of the owner is $nameOfOwner")
+        println("The name of the owner is $nameOfHuman")
     }
     override fun running() {
         super.running()

@@ -13,7 +13,6 @@ public class MyBrother {
 //    public String getName() {
 //        return name;
 //    }
-//
     public static void main(String[] args) {
 //        MyBrother mb = new MyBrother("Pratham",11);
 //        System.out.println(mb.name);
@@ -21,6 +20,7 @@ public class MyBrother {
 
         b bobj= new b();
         bobj.name = "Prathamesh";
+        bobj.nameOfStudent = "Pratham";
         bobj.displayName();
 
         a aobj = new a();
@@ -28,13 +28,13 @@ public class MyBrother {
     }
 }
 
-class a{
-    public String name ;
+class a {
+    public String name;
     public void displayName(){
         System.out.println("The name of the person is " + name);
     }
 }
-class b extends a{
+class b extends a {
     public String nameOfStudent;
     @Override
     public void displayName(){
