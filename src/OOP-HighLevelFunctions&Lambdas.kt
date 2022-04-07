@@ -13,7 +13,7 @@ fun main(args : Array<String>) {
     //Lambda Expression is just a function without name.
     val myLambda: (Int) -> Unit ={ s /* The 's' on left side is the parameter */ : Int -> println(s) /* The statements after the arrow is the body of the lambda expression */} // Stuff written inside the curly braces is a function and the Lambda Expression[ is just a Function ]
     myProgramObj.addTwoNum(78,11,myLambda)
-
+//    myProgramObj.addTwoNum(78,11,{s: Int -> println(s)})
 }
 class MyProgram{
 //    Simple way to declare the method and calling it in the main method
@@ -22,6 +22,7 @@ class MyProgram{
         println("Simple method printing sum - $sum")
     }
 //    Using Interface / Obj oriented way to print sum
+//    High level functions with lambda as parameter
     fun addTwoNum(a : Int , b: Int , action : MyInterface){
         val sum = a + b
         action.execute(sum)
