@@ -28,4 +28,3 @@ class MyLambdaFunctions5{
         println("Person started walking at the age of $age anbd the name of the person was $name")
     }
 }
-
